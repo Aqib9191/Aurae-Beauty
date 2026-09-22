@@ -1,0 +1,198 @@
+import { Order, ContactMessage, Customer, OrderStatus } from '../types';
+
+export const initialOrders: Order[] = [
+  {
+    id: 'AUR-89241',
+    orderNumber: 'AUR-89241',
+    customerName: 'Amina Tariq',
+    phone: '03014567890',
+    email: 'amina.t@example.com',
+    deliveryAddress: 'House 42-A, Street 9, DHA Phase 5',
+    city: 'Lahore',
+    postalCode: '54000',
+    orderNotes: 'Please ring bell twice upon arrival.',
+    items: [
+      {
+        productId: 'lum-01',
+        productName: 'Hydrating Glow Serum',
+        image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=900&auto=format&fit=crop&q=80',
+        price: 2850,
+        quantity: 1,
+      },
+      {
+        productId: 'lum-03',
+        productName: 'Daily Radiance Moisturizer',
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900&auto=format&fit=crop&q=80',
+        price: 2499,
+        quantity: 1,
+      }
+    ],
+    subtotal: 5349,
+    deliveryFee: 0,
+    discount: 0,
+    total: 5349,
+    paymentMethod: 'Cash on Delivery',
+    status: OrderStatus.CONFIRMED,
+    createdAt: '2026-09-17T14:22:00.000Z',
+  },
+  {
+    id: 'AUR-89240',
+    orderNumber: 'AUR-89240',
+    customerName: 'Bilal Ahmed',
+    phone: '03218765432',
+    email: 'bilal.ahmed@example.com',
+    deliveryAddress: 'Apartment 604, Creek Vistas, Clifton Block 8',
+    city: 'Karachi',
+    postalCode: '75600',
+    items: [
+      {
+        productId: 'lum-02',
+        productName: 'Velvet Matte Lipstick',
+        image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=900&auto=format&fit=crop&q=80',
+        price: 1950,
+        quantity: 2,
+        selectedColor: 'Rose Nude',
+      },
+      {
+        productId: 'lum-05',
+        productName: 'Lash Define Mascara',
+        image: 'https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=900&auto=format&fit=crop&q=80',
+        price: 1650,
+        quantity: 1,
+      }
+    ],
+    subtotal: 5550,
+    deliveryFee: 0,
+    discount: 0,
+    total: 5550,
+    paymentMethod: 'Order via WhatsApp',
+    status: OrderStatus.PROCESSING,
+    createdAt: '2026-09-17T09:15:00.000Z',
+  },
+  {
+    id: 'AUR-89239',
+    orderNumber: 'AUR-89239',
+    customerName: 'Zoya Khan',
+    phone: '03335551234',
+    email: 'zoya.k@example.com',
+    deliveryAddress: 'Sector F-7/2, Street 14, House 18',
+    city: 'Islamabad',
+    postalCode: '44000',
+    items: [
+      {
+        productId: 'lum-07',
+        productName: 'Nourishing Hair Mask',
+        image: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=900&auto=format&fit=crop&q=80',
+        price: 3250,
+        quantity: 1,
+      }
+    ],
+    subtotal: 3250,
+    deliveryFee: 250,
+    discount: 0,
+    total: 3500,
+    paymentMethod: 'Cash on Delivery',
+    status: OrderStatus.SHIPPED,
+    createdAt: '2026-09-16T18:40:00.000Z',
+  },
+  {
+    id: 'AUR-89238',
+    orderNumber: 'AUR-89238',
+    customerName: 'Sara Noor',
+    phone: '03451122334',
+    email: 'sara.noor@example.com',
+    deliveryAddress: 'Gulberg Greens, Executive Block',
+    city: 'Islamabad',
+    postalCode: '44000',
+    items: [
+      {
+        productId: 'lum-08',
+        productName: 'Rose Glow Body Lotion',
+        image: 'https://images.unsplash.com/photo-1608248597359-2ff9e3b1c676?w=900&auto=format&fit=crop&q=80',
+        price: 2650,
+        quantity: 1,
+      },
+      {
+        productId: 'lum-04',
+        productName: 'Soft Touch Blush',
+        image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&auto=format&fit=crop&q=80',
+        price: 1850,
+        quantity: 1,
+        selectedColor: 'Dusty Rose',
+      }
+    ],
+    subtotal: 4500,
+    deliveryFee: 250,
+    discount: 0,
+    total: 4750,
+    paymentMethod: 'Cash on Delivery',
+    status: OrderStatus.DELIVERED,
+    createdAt: '2026-09-15T11:05:00.000Z',
+  }
+];
+
+export const initialMessages: ContactMessage[] = [
+  {
+    id: 'msg-01',
+    name: 'Nadia Sheikh',
+    email: 'nadia.sheikh@example.com',
+    phone: '03001239876',
+    subject: 'Product Shade Recommendation',
+    message: 'Hello, I have fair skin with warm olive undertones. Could you recommend whether the Velvet Matte Lipstick in Rose Nude or Burnt Terracotta would suit me best?',
+    date: '2 hours ago',
+    read: false,
+  },
+  {
+    id: 'msg-02',
+    name: 'Rabia Farooq',
+    email: 'rabia.f@example.com',
+    phone: '03224455667',
+    subject: 'Bulk Bridal Gift Set Inquiry',
+    message: 'Hi team, I am organizing bridal party gifts for next month and would like to order 10 sets of the Hydrating Glow Serum and Rose Glow Body Lotion. Is wholesale pricing available?',
+    date: '1 day ago',
+    read: true,
+  }
+];
+
+export const initialCustomers: Customer[] = [
+  {
+    id: 'cust-01',
+    name: 'Amina Tariq',
+    email: 'amina.t@example.com',
+    phone: '03014567890',
+    city: 'Lahore',
+    ordersCount: 3,
+    totalSpent: 16400,
+    joinedDate: 'August 2026',
+  },
+  {
+    id: 'cust-02',
+    name: 'Bilal Ahmed',
+    email: 'bilal.ahmed@example.com',
+    phone: '03218765432',
+    city: 'Karachi',
+    ordersCount: 2,
+    totalSpent: 11050,
+    joinedDate: 'July 2026',
+  },
+  {
+    id: 'cust-03',
+    name: 'Zoya Khan',
+    email: 'zoya.k@example.com',
+    phone: '03335551234',
+    city: 'Islamabad',
+    ordersCount: 1,
+    totalSpent: 3500,
+    joinedDate: 'September 2026',
+  },
+  {
+    id: 'cust-04',
+    name: 'Sara Noor',
+    email: 'sara.noor@example.com',
+    phone: '03451122334',
+    city: 'Islamabad',
+    ordersCount: 4,
+    totalSpent: 22800,
+    joinedDate: 'June 2026',
+  }
+];

@@ -1,0 +1,7 @@
+{
+  "name": "AURAÉ BEAUTY",
+  "description": "Premium beauty and cosmetics e-commerce store offering skincare, makeup, hair care, and beauty essentials with Cash on Delivery and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

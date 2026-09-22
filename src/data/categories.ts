@@ -1,0 +1,58 @@
+import { Category } from '../types';
+
+export const categories: Category[] = [
+  {
+    id: 'cat-skincare',
+    name: 'Skincare',
+    slug: 'skincare',
+    tagline: 'Glow from Within',
+    description: 'Cleansers, serums, moisturizers, and treatments formulated to hydrate, protect, and illuminate.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900&auto=format&fit=crop&q=80',
+    itemCount: 5,
+  },
+  {
+    id: 'cat-makeup',
+    name: 'Makeup',
+    slug: 'makeup',
+    tagline: 'Modern & Weightless',
+    description: 'Everyday and occasion-ready beauty that enhances your natural elegance without heavy buildup.',
+    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&auto=format&fit=crop&q=80',
+    itemCount: 4,
+  },
+  {
+    id: 'cat-lips',
+    name: 'Lips',
+    slug: 'lips',
+    tagline: 'Satin & Velvet Comfort',
+    description: 'Nutrient-rich lipsticks, glosses, balms, and tint oils with velvety textures and all-day wear.',
+    image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=900&auto=format&fit=crop&q=80',
+    itemCount: 2,
+  },
+  {
+    id: 'cat-eyes',
+    name: 'Eyes',
+    slug: 'eyes',
+    tagline: 'Define & Captivate',
+    description: 'High-precision mascaras, rich shadow palettes, and waterproof liners for effortless definition.',
+    image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=900&auto=format&fit=crop&q=80',
+    itemCount: 3,
+  },
+  {
+    id: 'cat-haircare',
+    name: 'Hair Care',
+    slug: 'hair-care',
+    tagline: 'Silky Resilience',
+    description: 'Nourishing shampoos, restorative hair masks, and argan bonding oils for glossy, healthy hair.',
+    image: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=900&auto=format&fit=crop&q=80',
+    itemCount: 3,
+  },
+  {
+    id: 'cat-bodycare',
+    name: 'Body Care',
+    slug: 'body-care',
+    tagline: 'Sensorial Indulgence',
+    description: 'Aromatic botanical lotions, rich body butters, and gentle polishing scrubs for smooth skin.',
+    image: 'https://images.unsplash.com/photo-1608248597359-2ff9e3b1c676?w=900&auto=format&fit=crop&q=80',
+    itemCount: 2,
+  },
+];
