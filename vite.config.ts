@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Lumera-Beauty/',
+    base: '/Aurae-Beauty/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
